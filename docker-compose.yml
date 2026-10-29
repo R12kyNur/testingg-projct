@@ -1,0 +1,8 @@
+services:
+  app:
+    container_name: project-pink
+    build:
+      context: .
+    ports:
+      - "8080:80"
+    restart: unless-stopped
